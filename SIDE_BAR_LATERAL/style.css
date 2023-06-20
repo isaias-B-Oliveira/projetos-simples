@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: cadetblue;
+}
+.menulateral{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    background-color: rgb(54, 51, 51);
+    padding: 40px 0 40px 20px;
+    border-left: 3px solid #ff0077;
+    overflow: hidden;
+    transition: 0.8s;
+}
+nav.menulateral.expandir{
+    width: 300px;
+}
+.abrir{
+    width: 100%;
+    padding-left: 10px;
+    
+}
+.abrir > i{
+  background-color: azure;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+ul{
+    height: 100%;
+    list-style: none;
+}
+ul .iten-lista:hover{
+    background: #ff0077;
+    border-radius: 0 50px 50px 0;
+}
+ul .iten-lista{
+    transition: all 0.3s;
+}
+
+ul li.ativo{
+    background-color: #ff0077;
+}
+
+ul .iten-lista a{
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+ul .iten-lista a .txt-link{
+    margin-left: 70px;
+    transition: 1s;
+    opacity: 0;
+}
+nav.menulateral.expandir .txt-link{
+    opacity: 1;
+    margin-left: 40px;
+}
+ul .iten-lista a .icon > i{
+    font-size: 30px;
+}
+
+main{
+    margin-left: 80px;
+}
