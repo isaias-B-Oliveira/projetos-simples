@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    align-items: center;
+}
+body{
+    position: relative;
+    height: 100vh;
+}
+nav{
+    background-color: #191e24f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 15px 50px;
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0..548);
+    color: #fff;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+li{
+    width: 70px;
+}
+li a{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px 15px;
+    transition: 0.5s;
+    color: #fff;
+}
+li a:hover{
+    color: #f1c40f;
+    border-bottom: 4px #f1c40f solid;
+    transition: 0.5s;
+}
+.hide{
+    top: 70px;
+}
+@media screen and (max-width: 700px) {
+    .hanburgue{
+       display: flex;
+       flex-direction: column;
+       gap: 8px;
+       cursor: pointer;
+       padding: 10px;
+       margin-right: -10px;
+    }
+    .lines{
+        display: flex;
+        background-color: #fff;
+        width: 35px;
+        height: 2px;
+    }
+    .lines-rotate{
+        background-color: #110f0f;
+        border-radius: 5px;
+    }
+    nav{
+        position: relative;
+        padding: 15px 20px;
+    }
+    ul{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -300px;
+        right: 0;
+        background-color: #0f0f0e;
+        padding: 35px 0;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0px 5px 5px
+        rgba(128, 128, 128, 0.363);
+    }
+    li a{
+        color: rgba(190, 182, 182, 0.836);
+    }
+    li{
+        text-align: center;
+        width: 90vw;
+    }
+    li a:hover{
+        font-weight: bold;
+        color: #f1c40f;
+        border: none;
+        letter-spacing: 3px;
+    }
+}

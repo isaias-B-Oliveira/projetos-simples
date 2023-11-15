@@ -1,0 +1,30 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    background-color: #d86845;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+h2{
+    background-color: #d86845;
+    padding: 20px;
+    margin-top: 10px;
+}
+ul{
+    list-style: none;
+    font-size: 25px;
+    color: rgb(243, 54, 6);
+}
