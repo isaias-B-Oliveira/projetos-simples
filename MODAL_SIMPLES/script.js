@@ -8,6 +8,7 @@ function Abrir() {
         Modal.showModal();
     });
 };
+
 Abrir();
 
 function Fechar() {
@@ -15,5 +16,6 @@ function Fechar() {
         Modal.close();
     });
 };
+
 Fechar();
 
